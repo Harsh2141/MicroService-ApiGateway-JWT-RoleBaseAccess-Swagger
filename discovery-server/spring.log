@@ -1,0 +1,50 @@
+2023-01-06 17:36:00.250  INFO 68536 --- [main] io.fruitmart.DiscoveryServerApplication  : Starting DiscoveryServerApplication using Java 17.0.4 on ICHA272587NB with PID 68536 (D:\Parctice\Micro-Service\discovery-server\target\classes started by 272587 in D:\Parctice\Micro-Service\discovery-server)
+2023-01-06 17:36:00.252  INFO 68536 --- [main] io.fruitmart.DiscoveryServerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 17:36:01.022  INFO 68536 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63d761d1-3c5c-398a-b21e-b18b1d377085
+2023-01-06 17:36:01.264  INFO 68536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-01-06 17:36:01.277  INFO 68536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 17:36:01.277  INFO 68536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-01-06 17:36:01.437  INFO 68536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 17:36:01.438  INFO 68536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1142 ms
+2023-01-06 17:36:01.826  INFO 68536 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2023-01-06 17:36:01.872  INFO 68536 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2023-01-06 17:36:01.873  INFO 68536 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2023-01-06 17:36:02.018  INFO 68536 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2023-01-06 17:36:02.018  INFO 68536 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2023-01-06 17:36:02.423  INFO 68536 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4db568e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bc8ffbc, org.springframework.security.web.context.SecurityContextPersistenceFilter@76d1f6ea, org.springframework.security.web.header.HeaderWriterFilter@3d8bd881, org.springframework.security.web.authentication.logout.LogoutFilter@6fc28e5b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2762253e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3580134d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e19b30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120d13ae, org.springframework.security.web.session.SessionManagementFilter@5d8fd077, org.springframework.security.web.access.ExceptionTranslationFilter@106802ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2006fdaa]
+2023-01-06 17:36:03.121  INFO 68536 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-01-06 17:36:03.163  WARN 68536 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-06 17:36:03.178  INFO 68536 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-06 17:36:03.211  INFO 68536 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-06 17:36:03.211  INFO 68536 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2023-01-06 17:36:03.224  INFO 68536 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1673006763223 with initial instances count: 0
+2023-01-06 17:36:03.262  INFO 68536 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-01-06 17:36:03.263  WARN 68536 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2023-01-06 17:36:03.280  INFO 68536 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-01-06 17:36:03.281  INFO 68536 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-01-06 17:36:03.289  INFO 68536 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-01-06 17:36:03.338  INFO 68536 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVER with eureka with status UP
+2023-01-06 17:36:03.346  INFO 68536 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-01-06 17:36:03.347  INFO 68536 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-01-06 17:36:03.347  INFO 68536 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-01-06 17:36:03.347  INFO 68536 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-01-06 17:36:03.347  INFO 68536 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-01-06 17:36:03.356  INFO 68536 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-01-06 17:36:03.364  INFO 68536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-01-06 17:36:03.364  INFO 68536 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2023-01-06 17:36:03.466  INFO 68536 --- [main] io.fruitmart.DiscoveryServerApplication  : Started DiscoveryServerApplication in 3.646 seconds (JVM running for 4.4)
+2023-01-06 17:36:05.824  INFO 68536 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 17:36:05.824  INFO 68536 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 17:36:05.825  INFO 68536 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-06 17:36:47.350  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-01-06 17:36:47.351  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application DISCOVERY-SERVER with eureka with status DOWN
+2023-01-06 17:36:47.368  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-06 17:36:47.370  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-06 17:36:47.377  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-01-06 17:36:47.382  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-01-06 17:36:47.392  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-01-06 17:36:47.392  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-01-06 17:36:47.393  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-01-06 17:36:47.400  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-01-06 17:36:47.409  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-06 17:36:47.410  INFO 68536 --- [RMI TCP Connection(5)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
